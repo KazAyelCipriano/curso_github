@@ -1,0 +1,20 @@
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> echo "#curso_github" >> README.md
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git init
+Initialized empty Git repository in C:/Users/Pedro Cipriano/Desktop/GitHub/.git/
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git add README.md 
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git commit -m "first commit"
+[master (root-commit) 9ce4842] first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git branch -M main
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git remote add origin https://github.com/KazAyelCipriano/curso_github.git
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 247 bytes | 247.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/KazAyelCipriano/curso_github.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\Pedro Cipriano\Desktop\GitHub>
