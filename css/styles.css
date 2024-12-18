@@ -2,7 +2,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'verdana', sans-serif;
   box-sizing: border-box;
 }
 
@@ -13,7 +13,7 @@
   --border-color: #999;
   --bio-bg-color: #21113b;
   --bio-border-color: #ffffff;
-  --about-bg-color: #102f57;
+  --about-bg-color: #324661;
 }
 
 /* General */
@@ -96,7 +96,7 @@
 #email-container a {
   color: var(--main-text-color);
   text-decoration: none;
-  max-width: 250px;
+  max-width: 280px;
 }
 
 #email-container ion-icon {
