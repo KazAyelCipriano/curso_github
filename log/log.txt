@@ -1,0 +1,197 @@
+
+Pedro Cipriano@DESKTOP-3UMV7T5 MINGW64 ~/Desktop/GitHub (main)
+$ git log
+commit 993aeb1c6b5a6241b5b850af9863f5276c4cd9a6 (HEAD -> main, origin/main)
+Author: Cipriano <professorpedrocipriano@gmail.com>
+Date:   Wed Dec 18 17:12:57 2024 -0300
+
+    git
+
+commit 870f3a51ff58b4bf0e843f7f99932cadd03ecce8
+Author: Cipriano <professorpedrocipriano@gmail.com>
+Date:   Wed Dec 18 17:11:18 2024 -0300
+
+    Update Clone
+
+commit 1a817a1b8074f6d1f499c19f4d5affaf67bd4d93
+Author: Cipriano <professorpedrocipriano@gmail.com>
+Date:   Wed Dec 18 11:23:15 2024 -0300
+
+    Enviando Clone
+
+commit bd14031a2107d0b3c0f8481ff50a7c7584406621
+Author: Cipriano <professorpedrocipriano@gmail.com>
+Date:   Wed Dec 18 10:44:08 2024 -0300
+
+    pull_clone log updated
+
+commit 65f9614a0e4f1be5e97c5d299eaf905e2854d6cc
+Author: Cipriano <professorpedrocipriano@gmail.com>
+Date:   Wed Dec 18 10:05:41 2024 -0300
+
+    Organizando testes
+
+commit 24df83d9ab086cf4940706c27c2cddb6b185b986
+Author: Cipriano <professorpedrocipriano@gmail.com>
+Date:   Wed Dec 18 10:03:28 2024 -0300
+
+    Organizando testes
+
+commit 5aba11d6230be747c19878fef000aca8a10eb505
+Author: Cipriano <professorpedrocipriano@gmail.com>
+Date:   Wed Dec 18 09:58:46 2024 -0300
+
+    Update pull.html
+
+commit 27186e3fe051a4d181a63cbdbf83665424be8198
+Author: Cipriano <professorpedrocipriano@gmail.com>
+Date:   Wed Dec 18 09:51:24 2024 -0300
+
+    Removed profile.png
+    Using profile.jpg for better quality
+
+commit 25c3f8d6a96310eccf92742a717d55703d1682ec
+Author: Cipriano <professorpedrocipriano@gmail.com>
+Date:   Wed Dec 18 09:45:42 2024 -0300
+
+    Create pull.html
+
+commit d36e6075ef6b949b26efef35e84a4699daf00e28
+Author: Cipriano <professorpedrocipriano@gmail.com>
+Date:   Wed Dec 18 09:33:14 2024 -0300
+
+    updated styles.css
+
+commit b644785fbedc20c65acf47f18f0a9d4b1ff71cc0
+Author: Cipriano <professorpedrocipriano@gmail.com>
+Date:   Wed Dec 18 08:45:01 2024 -0300
+
+    Modificada a aparência do css
+    08:45 18/12/2024
+
+commit 9dc221308a425a138508870f0382a5e0318bdb1f
+Author: Cipriano <professorpedrocipriano@gmail.com>
+:
+commit 993aeb1c6b5a6241b5b850af9863f5276c4cd9a6 (HEAD -> main, origin/main)
+Author: Cipriano <professorpedrocipriano@gmail.com>
+Date:   Wed Dec 18 17:12:57 2024 -0300
+
+    git
+
+commit 870f3a51ff58b4bf0e843f7f99932cadd03ecce8
+Author: Cipriano <professorpedrocipriano@gmail.com>
+Date:   Wed Dec 18 17:11:18 2024 -0300
+
+    Update Clone
+
+commit 1a817a1b8074f6d1f499c19f4d5affaf67bd4d93
+Author: Cipriano <professorpedrocipriano@gmail.com>
+Date:   Wed Dec 18 11:23:15 2024 -0300
+
+    Enviando Clone
+
+commit bd14031a2107d0b3c0f8481ff50a7c7584406621
+Author: Cipriano <professorpedrocipriano@gmail.com>
+Date:   Wed Dec 18 10:44:08 2024 -0300
+
+    pull_clone log updated
+:
+commit 993aeb1c6b5a6241b5b850af9863f5276c4cd9a6 (HEAD -> main, origin/main)
+Author: Cipriano <professorpedrocipriano@gmail.com>
+Date:   Wed Dec 18 17:12:57 2024 -0300
+
+    git
+
+commit 870f3a51ff58b4bf0e843f7f99932cadd03ecce8
+Author: Cipriano <professorpedrocipriano@gmail.com>
+Date:   Wed Dec 18 17:11:18 2024 -0300
+
+    Update Clone
+
+commit 1a817a1b8074f6d1f499c19f4d5affaf67bd4d93
+Author: Cipriano <professorpedrocipriano@gmail.com>
+Date:   Wed Dec 18 11:23:15 2024 -0300
+
+    Enviando Clone
+
+commit bd14031a2107d0b3c0f8481ff50a7c7584406621
+Author: Cipriano <professorpedrocipriano@gmail.com>
+Date:   Wed Dec 18 10:44:08 2024 -0300
+
+    pull_clone log updated
+
+commit 65f9614a0e4f1be5e97c5d299eaf905e2854d6cc
+Author: Cipriano <professorpedrocipriano@gmail.com>
+Date:   Wed Dec 18 10:05:41 2024 -0300
+
+    Organizando testes
+
+commit 24df83d9ab086cf4940706c27c2cddb6b185b986
+Author: Cipriano <professorpedrocipriano@gmail.com>
+Date:   Wed Dec 18 10:03:28 2024 -0300
+
+    Organizando testes
+
+commit 5aba11d6230be747c19878fef000aca8a10eb505
+Author: Cipriano <professorpedrocipriano@gmail.com>
+Date:   Wed Dec 18 09:58:46 2024 -0300
+
+    Update pull.html
+
+commit 27186e3fe051a4d181a63cbdbf83665424be8198
+Author: Cipriano <professorpedrocipriano@gmail.com>
+Date:   Wed Dec 18 09:51:24 2024 -0300
+
+    Removed profile.png
+    Using profile.jpg for better quality
+
+commit 25c3f8d6a96310eccf92742a717d55703d1682ec
+Author: Cipriano <professorpedrocipriano@gmail.com>
+Date:   Wed Dec 18 09:45:42 2024 -0300
+
+    Create pull.html
+
+commit d36e6075ef6b949b26efef35e84a4699daf00e28
+Author: Cipriano <professorpedrocipriano@gmail.com>
+Date:   Wed Dec 18 09:33:14 2024 -0300
+
+    updated styles.css
+
+commit b644785fbedc20c65acf47f18f0a9d4b1ff71cc0
+Author: Cipriano <professorpedrocipriano@gmail.com>
+Date:   Wed Dec 18 08:45:01 2024 -0300
+
+    Modificada a aparência do css
+    08:45 18/12/2024
+
+commit 9dc221308a425a138508870f0382a5e0318bdb1f
+Author: Cipriano <professorpedrocipriano@gmail.com>
+Date:   Wed Dec 18 02:15:05 2024 -0300
+
+    vscode_terminal_log updated 02:15 18/12/2024
+
+commit 5428a3c5fbc79fff6f1bc3d30bb1745632734918
+Author: Cipriano <professorpedrocipriano@gmail.com>
+Date:   Wed Dec 18 02:08:27 2024 -0300
+
+    Enviando repositorio
+
+commit 10683890431989ee319681d2ab8cab0a3468feaf
+Author: Cipriano <professorpedrocipriano@gmail.com>
+Date:   Wed Dec 18 02:07:31 2024 -0300
+
+    Enviando portfolio
+
+commit 92b20d0cca3dee4230c68b110fe916d00891bafd
+Author: Cipriano <professorpedrocipriano@gmail.com>
+Date:   Wed Dec 18 01:13:49 2024 -0300
+
+    README.md updated
+    vscode_terminal_log.txt added for research and learning
+
+commit 9ce4842cfc1d6db858a770c40b1815b7ffe73445
+Author: Cipriano <professorpedrocipriano@gmail.com>
+Date:   Wed Dec 18 00:57:38 2024 -0300
+
+    first commit
+(END)
