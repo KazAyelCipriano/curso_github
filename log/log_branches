@@ -1,0 +1,21 @@
+# Update Log: Branch Creation and Version Indexation
+
+This log documents the update process involving the creation and indexation of branches to represent different versions of the project. Each branch corresponds to a specific version, allowing for better organization, tracking, and collaboration within the project.
+
+## Purpose of This Update
+
+- Introduced branch-based version control to simplify project versioning.
+- Enhanced accessibility and clarity by indexing project branches as distinct versions.
+- Improved workflow for contributors and maintainers by providing clear version separation.
+
+## Overview of Changes
+
+- Created new branches representing major, minor, and patch versions.
+- Updated versioning documentation to reflect the new branch structure.
+- Ensured consistency across branches by merging or cherry-picking critical updates.
+
+---
+
+This update lays the foundation for a more robust and scalable version control system, ensuring streamlined development and maintenance going forward.
+
+
