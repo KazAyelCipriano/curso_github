@@ -1,0 +1,431 @@
+# Update Log: Branch Creation and Version Indexation
+
+This log documents the update process involving the creation and indexation of branches to represent different versions of the project. Each branch corresponds to a specific version, allowing for better organization, tracking, and collaboration within the project.
+
+## Purpose of This Update
+
+- Introduced branch-based version control to simplify project versioning.
+- Enhanced accessibility and clarity by indexing project branches as distinct versions.
+- Improved workflow for contributors and maintainers by providing clear version separation.
+
+## Overview of Changes
+
+- Created new branches representing major, minor, and patch versions.
+- Updated versioning documentation to reflect the new branch structure.
+- Ensured consistency across branches by merging or cherry-picking critical updates.
+
+---
+
+This update lays the foundation for a more robust and scalable version control system, ensuring streamlined development and maintenance going forward.
+
+
+
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> cd .\git_rep_v1.1\
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git clone https://github.com/KazAyelCipriano/curso_github.git .
+Cloning into '.'...
+remote: Enumerating objects: 70, done.
+remote: Counting objects: 100% (70/70), done.
+remote: Compressing objects: 100% (49/49), done.
+remote: Total 70 (delta 21), reused 57 (delta 12), pack-reused 0 (from 0)
+Receiving objects: 100% (70/70), 1023.72 KiB | 2.43 MiB/s, done.
+Resolving deltas: 100% (21/21), done.
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git branch
+* main
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git branch branch_1
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git branch
+  branch_1
+* main
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git branch branch_2
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git branch
+  branch_1
+  branch_2
+* main
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git branch branch_3
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git branch
+  branch_1
+  branch_2
+  branch_3
+* main
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git branch -d branch_3
+Deleted branch branch_3 (was 3c90bc6).
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git branch
+  branch_1
+  branch_2
+* main
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git branch branch_3   
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git checkout branch_1
+Switched to branch 'branch_1'
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git branch           
+* branch_1
+  branch_2
+  branch_3
+  main
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git -b teste_v1.1
+unknown option: -b
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git checkout -b teste_v1.1
+Switched to a new branch 'teste_v1.1'
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git branch
+  branch_1
+  branch_2
+  branch_3
+  main
+* teste_v1.1
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git branch
+  branch_1
+  branch_2
+  branch_3
+* main
+  teste_v1.1
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git checkout branch_1
+Switched to branch 'branch_1'
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git status
+On branch branch_1
+nothing to commit, working tree clean
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git checkout branch_2
+Switched to branch 'branch_2'
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git status
+On branch branch_2
+nothing to commit, working tree clean
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git checkout branch_3
+Switched to branch 'branch_3'
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git status
+On branch branch_3
+nothing to commit, working tree clean
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git checkout teste_v1.1
+Switched to branch 'teste_v1.1'
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git status
+On branch teste_v1.1
+nothing to commit, working tree clean
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git checkout main      
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git commit -a -m "branches"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git add .
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git branch
+  branch_1
+  branch_2
+  branch_3
+* main
+  teste_v1.1
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git checkout teste_v1.1
+Switched to branch 'teste_v1.1'
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git status
+On branch teste_v1.1
+nothing to commit, working tree clean
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git branch
+  branch_1
+  branch_2
+  branch_3
+  main
+* teste_v1.1
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git merge branch_3
+Already up to date.
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git branch        
+  branch_1
+  branch_2
+  branch_3
+  main
+* teste_v1.1
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git merge branch_2
+Already up to date.
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git status
+On branch teste_v1.1
+nothing to commit, working tree clean
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git cd .. 
+git: 'cd' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git checkout main    
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git status       
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git branch        
+  branch_1
+  branch_2
+  branch_3
+* main
+  teste_v1.1
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> git add .
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\git_rep_v1.1> cd ..
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   log/log_branches
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git add . 
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   log/log_branches
+
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git commit -a -m "branches log creation"
+[main cdf1ac0] branches log creation
+ 1 file changed, 2 insertions(+)
+
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git status       
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    log/log.txt
+        deleted:    log/vscode_terminal_log.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        log/log_commits.txt
+        log/log_vscode_terminal.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git add .
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+        renamed:    log/log.txt -> log/log_commits.txt
+        renamed:    log/vscode_terminal_log.txt -> log/log_vscode_terminal.txt
+
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git branch
+  gitv1.0
+  gitv1.1
+* main
+  update
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git stash show
+No stash entries found.
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git stash list
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git stash flow
+fatal: subcommand wasn't specified; 'push' can't be assumed due to unexpected token 'flow'
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git stash
+Saved working directory and index state WIP on main: bc17ddc update log_branches
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git stash list
+stash@{0}: WIP on main: bc17ddc update log_branches
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git stash apply 0
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   log/log_commits.txt
+        new file:   log/log_vscode_terminal.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    log/log.txt
+        deleted:    log/vscode_terminal_log.txt
+
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git stash apply 1
+fatal: log for 'refs/stash' only has 1 entries
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git stash apply 0
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   log/log_commits.txt
+        new file:   log/log_vscode_terminal.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    log/log.txt
+        deleted:    log/vscode_terminal_log.txt
+
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git stash show   
+ log/{log.txt => log_commits.txt}                         | 0
+ log/{vscode_terminal_log.txt => log_vscode_terminal.txt} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git stash apply 
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   log/log_commits.txt
+        new file:   log/log_vscode_terminal.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    log/log.txt
+        deleted:    log/vscode_terminal_log.txt
+
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git stash clear
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git status       
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   log/log_commits.txt
+        new file:   log/log_vscode_terminal.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    log/log.txt
+        deleted:    log/vscode_terminal_log.txt
+
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git stash list   
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git stash        
+Saved working directory and index state WIP on main: bc17ddc update log_branches
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git status    
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git stash drop 5
+fatal: log for 'refs/stash' only has 1 entries
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> 
+ *  History restored 
+Your branch is up to date with 'origin/main'.
+
+        renamed:    log/log.txt -> log/log_commits.txt
+        renamed:    log/vscode_terminal_log.txt -> log/log_vscode_terminal.txt
+
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git branch
+  gitv1.0
+  gitv1.1
+* main
+  update
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git stash show
+No stash entries found.
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git stash list
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git stash flow
+fatal: subcommand wasn't specified; 'push' can't be assumed due to unexpected token 'flow'
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git stash
+Saved working directory and index state WIP on main: bc17ddc update log_branches
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git stash list
+stash@{0}: WIP on main: bc17ddc update log_branches
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git stash apply 0
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   log/log_commits.txt
+        new file:   log/log_vscode_terminal.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    log/log.txt
+        deleted:    log/vscode_terminal_log.txt
+
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git stash apply 1
+fatal: log for 'refs/stash' only has 1 entries
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git stash apply 0
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   log/log_commits.txt
+        new file:   log/log_vscode_terminal.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    log/log.txt
+        deleted:    log/vscode_terminal_log.txt
+
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git stash show   
+ log/{log.txt => log_commits.txt}                         | 0
+ log/{vscode_terminal_log.txt => log_vscode_terminal.txt} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git stash apply 
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   log/log_commits.txt
+        new file:   log/log_vscode_terminal.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    log/log.txt
+        deleted:    log/vscode_terminal_log.txt
+
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git stash clear
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git status       
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   log/log_commits.txt
+        new file:   log/log_vscode_terminal.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    log/log.txt
+        deleted:    log/vscode_terminal_log.txt
+
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git stash list   
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git stash        
+Saved working directory and index state WIP on main: bc17ddc update log_branches
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git status    
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git stash drop 5
+fatal: log for 'refs/stash' only has 1 entries
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> 
+ *  History restored 
+
