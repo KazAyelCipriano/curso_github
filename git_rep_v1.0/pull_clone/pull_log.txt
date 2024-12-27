@@ -1,0 +1,53 @@
+PS C:\Users\Pedro Cipriano\Desktop\GitHub>
+PS C:\Users\Pedro Cipriano\Desktop\GitHub>
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 981 bytes | 196.00 KiB/s, done.
+From https://github.com/KazAyelCipriano/curso_github
+   27186e3..5aba11d  main       -> origin/main
+Updating 27186e3..5aba11d
+Fast-forward
+ pull.html | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    pull.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        pull_clone/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git add .
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    pull.html -> pull_clone/pull.html
+
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git commit -a -m "Organizando testes"
+[main 24df83d] Organizando testes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename pull.html => pull_clone/pull.html (100%)
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS C:\Users\Pedro Cipriano\Desktop\GitHub>

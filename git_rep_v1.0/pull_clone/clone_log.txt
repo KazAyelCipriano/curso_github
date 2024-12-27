@@ -1,0 +1,148 @@
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> cd pull_clone
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\pull_clone> git clone https://github.com/KazAyelCipriano/curso_github.git .     
+fatal: destination path '.' already exists and is not an empty directory.
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\pull_clone> cd clone
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\pull_clone\clone> git clone https://github.com/KazAyelCipriano/curso_github.git .
+Cloning into '.'...
+remote: Enumerating objects: 52, done.
+remote: Counting objects: 100% (52/52), done.
+remote: Compressing objects: 100% (34/34), done.
+remote: Total 52 (delta 15), reused 42 (delta 9), pack-reused 0 (from 0)
+Receiving objects: 100% (52/52), 1019.72 KiB | 2.49 MiB/s, done.
+Resolving deltas: 100% (15/15), done.
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\pull_clone\clone> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\pull_clone\clone> git commit -a -m "Clonando via GitBash"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\pull_clone\clone> git push
+Everything up-to-date
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\pull_clone\clone>
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\pull_clone\clone> cd
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\pull_clone\clone> cd ..
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\pull_clone> cd ..
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        pull_clone/clone/
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git add .
+warning: adding embedded git repository: pull_clone/clone
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> pull_clone/clone
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached pull_clone/clone
+hint:
+hint: See "git help submodule" for more information.
+hint: Disable this message with "git config advice.addEmbeddedRepo false"
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git commit -a -m "Enviando Clone"
+[main 1a817a1] Enviando Clone
+ 1 file changed, 1 insertion(+)
+ create mode 160000 pull_clone/clone
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   pull_clone/clone (modified content, untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 368 bytes | 368.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/KazAyelCipriano/curso_github.git
+   bd14031..1a817a1  main -> main
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> cd pull_clone
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\pull_clone> cd clone
+
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\pull_clone\clone> git rm --cached pull_clone/clone                              
+fatal: pathspec 'pull_clone/clone' did not match any files
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\pull_clone\clone> cd
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\pull_clone\clone> cd
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\pull_clone\clone> cd ..
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\pull_clone> git rm --cached pull_clone/clone
+fatal: pathspec 'pull_clone/clone' did not match any files
+PS C:\Users\Pedro Cipriano\Desktop\GitHub\pull_clone> cd ..
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git rm --cached pull_clone/clone
+rm 'pull_clone/clone'
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    pull_clone/clone
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        pull_clone/clone/
+
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git add .
+warning: adding embedded git repository: pull_clone/clone
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> pull_clone/clone
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached pull_clone/clone
+hint:
+hint: See "git help submodule" for more information.
+hint: Disable this message with "git config advice.addEmbeddedRepo false"
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   pull_clone/clone (modified content, untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Pedro Cipriano\Desktop\GitHub> git commit -a -m "Cloning"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   pull_clone/clone (modified content, untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Pedro Cipriano\Desktop\GitHub>
